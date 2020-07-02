@@ -1,0 +1,9 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:admin@127.0.0.1:8088/eureka/
+spring:
+  application:
+    name: client1
+server:
+  port: 8081
