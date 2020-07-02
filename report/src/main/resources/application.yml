@@ -1,0 +1,24 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:admin@127.0.0.1:8000/eureka/
+spring:
+  application:
+    name: report
+  datasource:
+    url: jdbc:mysql://localhost:3306/h5_monitor?useUnicode=true&characterEncoding=UTF8&nullCatalogMeansCurrent=true&serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis:
+  mapper-locations: classpath*:com/data/report/inter/xml/*.xml
+  type-aliases-package: com.data.report.pojo
+server:
+  port: 8005
+  management:
+    security:
+      enabled: false
+feign:
+  hystrix:
+    enabled: true
+

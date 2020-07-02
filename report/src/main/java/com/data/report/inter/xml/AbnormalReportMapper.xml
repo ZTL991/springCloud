@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.data.report.inter.mapper.AbnormalReportMapper">
+  <resultMap id="BaseResultMap" type="com.data.report.pojo.AbnormalReport">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="urlAddr" jdbcType="VARCHAR" property="urladdr" />
+    <result column="loadPage" jdbcType="VARCHAR" property="loadpage" />
+    <result column="domReady" jdbcType="VARCHAR" property="domready" />
+    <result column="redirect" jdbcType="VARCHAR" property="redirect" />
+    <result column="lookupDomain" jdbcType="VARCHAR" property="lookupdomain" />
+    <result column="ttfb" jdbcType="VARCHAR" property="ttfb" />
+    <result column="request" jdbcType="VARCHAR" property="request" />
+    <result column="loadEvent" jdbcType="VARCHAR" property="loadevent" />
+    <result column="appcache" jdbcType="VARCHAR" property="appcache" />
+    <result column="unloadEvent" jdbcType="VARCHAR" property="unloadevent" />
+    <result column="contime" jdbcType="TIMESTAMP" property="contime" />
+    <result column="statCode" jdbcType="VARCHAR" property="statcode" />
+    <result column="errType" jdbcType="VARCHAR" property="errtype" />
+    <result column="reporttime" jdbcType="TIMESTAMP" property="reporttime" />
+  </resultMap>
+</mapper>
