@@ -1,0 +1,40 @@
+server:
+  port: 8004
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:admin@127.0.0.1:8000/eureka/
+spring:
+  application:
+    name: apiService
+zuul:
+  prefix: /api
+  routes:
+    client1:
+     path: /apiClient1/**
+     serviceId: client1
+     customSensitiveHeaders: true
+    client2:
+      path: /apiClient2/**
+      serviceId: client2
+      customSensitiveHeaders: true
+    client3:
+      path: /apiClient3/**
+      serviceId: client3
+      customSensitiveHeaders: true
+ribbon:
+  eureka:
+    enabled: true
+
+
+
+  #zuul:
+# routes:
+  #  client1: /apiClient1/**
+   #  client2: /apiClient2/**
+  #  client3: /apiClient3/**
+
+#  host:
+
+#   max-per-route-connections:
